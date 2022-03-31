@@ -259,3 +259,5 @@ switch (operacion) {
       break;
 }
 }
+
+//MÁS CONDICIONES DESPUÉS
