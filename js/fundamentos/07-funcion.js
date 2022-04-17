@@ -112,3 +112,62 @@ function presentarHeroe(){
 }
 
 console.log(presentarHeroe());
+
+//Diferencias entre declarativas y anónimas
+
+function calcularDescuento(precio, descuento){
+    //cual es el precio con descuento
+ let descuentoCalculado = 100 - descuento; 
+ let montoConDescuento = (precio * descuento) / 100; 
+
+ return `El importe a abonar es de ${montoConDescuento}`
+
+}
+
+console.log(calcularDescuento(2500, 15));
+let montoConDescuento = (precio * descuentoCalculado) / 100;
+
+  return `El importe a abonar es de $${montoConDescuento}`;
+}
+
+const calcularDescuento2 = function (precio, descuento) {
+  //cual es el precio con descuento
+  let descuentoCalculado = 100 - descuento;
+  let montoConDescuento = (precio * descuentoCalculado) / 100;
+
+  return `El importe a abonar es de $${montoConDescuento}`;
+};
+
+/*
+1- Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. 
+- A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
+*/
+// let cadena='pepe el hombre de al lado'
+
+const examinarCadena = function (cadena) {
+  if (cadena === cadena.toUpperCase()) {
+    return "El texto está en mayúsculas";
+  }
+
+  if (cadena === cadena.toLowerCase()) {
+    return "El texto está en minúsculas";
+  }
+
+  return "El texto tiene mayúsculas y minúsculas";
+};
+
+console.log(examinarCadena("hola funcion como estás"));
+
+/*
+2- Solicitar por pantalla al usuario ingresar el valor de los lados de un rectángulo, luego crear una función para calcular su perímetro y mostrarlo por pantalla.
+La fórmula del perímetro  es p = 2*(a +b)
+*/
+
+let ladoA = Number(prompt("Ingrese la altura del rectángulo"));
+let ladoB = Number(prompt("Ingrese el ancho del rectángulo"));
+
+const perimetroRectangulo = function (alto = 25, ancho = 10) {
+  return 2 * (alto + ancho);
+};
+
+document.write(`El perímetro del rectángulo es de ${perimetroRectangulo()}`);
