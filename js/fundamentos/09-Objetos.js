@@ -81,3 +81,25 @@ let auto ={
         }
     }
 }
+
+//Arreglos de objetos
+
+let alumnos = [
+    {
+      nombre: "Fabrizio",
+      curso: "Fullstack",
+    },
+    {
+      nombre: "Gabriela",
+      curso: "Javascript avanzado",
+    },
+    {
+      nombre: "Felipe",
+      curso: "Backend de cero a experto",
+    },
+  ];
+  
+  //recorrer un arreglo de objetos
+  for (let i = 0; i < alumnos.length; i++) {
+    console.log(`Nombre: ${alumnos[i].nombre} - ${alumnos[i].curso}`);
+  }
