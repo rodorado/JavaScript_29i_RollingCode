@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+      .img-dom {
+        width: 300px;
+      }
+      .fondo {
+        background-color: aqua;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" class="titulo_bonito">Clase de Javascript</h1>
+    <input type="checkbox" id="toggle" />
+    <br />
+    <h3 id="parrafito">Redireccionando...</h3>
+
+    <div id="lista">
+      <ul>
+        <li>sacar la basura</li>
+        <li>Pasear al perro</li>
+        <li>Estudiar inglés</li>
+      </ul>
+    </div>
+
+    <button onclick="alert('Hola chicos!! 🤩')">Click me!</button>
+    <button onclick="mostrarMensaje()">Click me now!</button>
+    <button onclick="saludar('Pablo Marino')">Saludar</button>
+    <br />
+    <br />
+    <input
+      id="campo"
+      type="text"
+      onclick="cambiarColor()"
+      onblur="quitarColor()"
+      onchange="cambioInput(event)"
+      name="campo_texto"
+      value="hola mundo"
+    />
+    <br />
+    <br />
+    <input type="text" id="text_nombre" placeholder="Ingresa tu nombre..." />
+    <button onclick="inputSaludar()">Mostrar</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
